@@ -1,0 +1,85 @@
+# Last amended: 26th Oct, 2024
+# My folder: /home/ashok/Documents/tig_install/5.sample
+#
+#   Objective:
+#                      Transform a csv file to line-protocol
+#			Np spaces allowed in tag values
+
+
+###### STEP 1: Convert tabular data to line-protocol ##########
+
+## Our sample.csv file:
+#	cat1,field1,cat2,field2,cat3,field3
+#	a,23,aa,34,aaa,54
+#	b,50,bb,34,bbb,89
+#	c,90,cc,98,ccc,97
+#	d,83,dd,33,ddd,354
+
+
+# 0.0 Will be converted to line protocol as follows. May take time.
+
+#	data,cat1=a,cat1=aa,cat1=aaa, field1=23,field2=34,field3=54
+#	data,cat1=b,cat1=bb,cat1=bbb, field1=50,field2=34,field3=89
+#	data,cat1=c,cat1=cc,cat1=ccc, field1=90,field2=98,field3=97
+#	data,cat1=d,cat1=dd,cat1=ddd, field1=83,field2=33,field3=354
+
+# 0.1 About the code:
+
+# a. It is a list comprehension code that loops over each row (d)
+# b. Even though all field values are taken as string but by default
+#    influxdb takes them as double.
+# c. Measurement or categorical or field names or values are NOT to be quoted
+
+
+# 1.0  Call libraries
+import pandas as pd
+
+# 1.1 Import sample csv file
+df = pd.read_csv('/home/ashok/Documents/influxdb/tig_install/5.sample/sample.csv')
+df.head()
+
+
+##****** Students: Make your changes below only.
+##	 Change column names and add more columns
+##	 as per need. Column names MUST not have
+##	 spaces
+
+
+lines = [  "data"  + ","				# measurement
+         + "city=" + str(df["city"][d]) + ","		# Ist cat
+         + "district=" + str(df["district"][d]) + ","	# IInd cat
+         + "country=" + str(df["country"][d]) 		# IIIRd cat
+         					        #
+         + " "						# One space between tags and fields
+         						#
+         + "lat="  + str(df["lat"][d]) + ","	        # Ist field
+         + "long="  + str(df["long"][d]) + ","	        # IInd field
+         + "co="  + str(df["co"][d]) + ","  	 	        # IIIrd field
+         + "so2="  + str(df["so2"][d]) + ","  	 	# IVrd field
+         + "no2="  + str(df["no2"][d]) + "," 	 	# Vrd field
+         + "o3="  + str(df["o3"][d]) + ","  	 	        # VIrd field
+         + "pm10="  + str(df["pm10"][d]) + ","  	 	# VIIrd field
+         + "pm25="  + str(df["pm25"][d]) + "," 	 	# VIIIrd field
+         + "date="  + str(df["date"][d]) + ","  	 	# IXrd field
+         + "sno="  + str(df["sno"][d])  	 	# Xrd field
+          
+         for d in range(len(df))   			# for every row (d)
+         ]	
+
+##****** Students: MAke your changes ABOVE only.
+
+
+# 1.2 Now open a file in write mode. We will write to it
+#       The final file size will be around 200MB
+
+thefile = open('/home/ashok/Documents/influxdb/tig_install/5.sample/converted.txt', 'w')
+
+###### STEP 2: Begin writing to file  ##########
+
+# 2.0 Begin writing line by line:
+for item in lines:
+    thefile.write("%s\n" % item)
+
+thefile.close()
+
+#################
