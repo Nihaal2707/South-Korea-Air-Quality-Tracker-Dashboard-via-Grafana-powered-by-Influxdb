@@ -40,6 +40,6 @@ Temporal trends of air pollution and weather patterns.
 
 ### Links
 
-**Source Dataset:** [Link to Dataset](https://www.kaggle.com/datasets/calebreigada/south-korean-pollution)
+[Dataset Source](https://www.kaggle.com/datasets/calebreigada/south-korean-pollution)
 
-Grafana Dashboard: http://localhost:3000/d/dca8a887-e6a2-4af8-bb98-a34198fda911/south-korea-air-quality-tracker?orgId=1&from=1732431390722&to=1732483978626
+[Grafana Dashboard](http://localhost:3000/d/dca8a887-e6a2-4af8-bb98-a34198fda911/south-korea-air-quality-tracker?orgId=1&from=1732431390722&to=1732483978626)
