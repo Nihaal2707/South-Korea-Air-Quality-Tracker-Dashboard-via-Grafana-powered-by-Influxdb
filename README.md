@@ -84,7 +84,7 @@ For viewing dashboard in Grafana [visit here](http://localhost:3000/d/dca8a887-e
 
 ## Managerial Insights
 
-**Chart 1:** **Pollutant Contribution by City**
+**1:** **Pollutant Contribution by City**
 
 ![Chart-08](https://github.com/user-attachments/assets/cbd04f37-5a3a-4b71-9814-65ed3f951f77)
 
@@ -104,7 +104,7 @@ For viewing dashboard in Grafana [visit here](http://localhost:3000/d/dca8a887-e
 	
 3.	Conduct further investigations to determine the sources of specific pollutants and develop city-specific mitigation strategies.
 
-**Chart 2: Maximum and Minimum PM2.5 Levels in the Past Month**
+**2: Maximum and Minimum PM2.5 Levels in the Past Month**
 
 ![Chart-01](https://github.com/user-attachments/assets/390e613d-4d72-4069-b394-383ad33a178c)
 
@@ -122,7 +122,7 @@ For viewing dashboard in Grafana [visit here](http://localhost:3000/d/dca8a887-e
 	
 3.	Utilize this data to forecast peak pollution periods and issue timely warnings or recommend preventive measures.
 
-**Chart 3: Air Quality Levels Over Time by City**
+**3: Air Quality Levels Over Time by City**
 
 ![Chart-03](https://github.com/user-attachments/assets/0d373775-8792-4b61-a739-730759b6b24c)
 
@@ -140,7 +140,7 @@ For viewing dashboard in Grafana [visit here](http://localhost:3000/d/dca8a887-e
 	
 3.	Engage local governments to develop tailored action plans addressing the primary sources of pollution in the most affected cities.
 
-**Chart 4: Daily average of all pollutants**
+**4: Daily average of all pollutants**
 
 ![Chart-02](https://github.com/user-attachments/assets/e03e18fa-105c-4cc0-845d-28bbc81a314c)
 
@@ -161,5 +161,109 @@ For viewing dashboard in Grafana [visit here](http://localhost:3000/d/dca8a887-e
 
 •	Raise public awareness about air quality and issue health advisories when necessary.
 
+**5. Pollutant Comparison (PM2.5 vs. PM10)**
 
+![Chart-15](https://github.com/user-attachments/assets/8b8b05ca-3518-4f55-ba56-74993ad18f28)
+
+**Insight:**
+
+•	PM2.5 levels are generally higher than PM10 across cities, indicating a significant presence of fine particulate matter that poses severe health risks. 
+
+•	The results suggest the need for targeted measures to reduce PM2.5 levels, such as regulating construction activities and promoting air purifiers in urban households.
+
+**6. SO2 levels by time of the day**
+
+![Chart-04](https://github.com/user-attachments/assets/432e2725-f306-4b97-9695-d69f6afa6247)
+
+**Insights**
+
+SO2 levels show a distinct daily pattern with peaks around 14:00 and 22:00.
+
+**Actionable Insights:**
+
+1.	Investigate peak sources: Analyze emissions from industrial activities, power plants, and transportation during these peak hours.
+
+2.	Implement targeted measures: Consider implementing measures like reduced industrial activity or traffic restrictions during peak SO2 periods.
+
+3.	Monitor continuously: Continue monitoring SO2 levels to identify any changes in trends or patterns.
+
+**7. Top 5 districts with highest PM10 levels**
+
+![Chart-05](https://github.com/user-attachments/assets/a6c94f75-7c35-440b-9c5d-9327118292a9)
+
+**Insights**
+
+PM10 levels show significant variation across different districts in South Korea, with Seoul, Seo-Gu, Paju-Si, Jeonnam, and Jeonbuk having the highest levels.
+
+**Actionable Insights:**
+
+1.	Targeted monitoring: Implement focused monitoring in these high PM10 areas to identify specific sources and pollution hotspots.
+	
+2.	Source reduction: Investigate emission sources in these districts, such as industrial activities, construction sites, and traffic, and implement measures to reduce them.
+	
+3.	Public awareness: Inform residents in these districts about the health risks associated with high PM10 levels and advise them to take precautions.
+
+**8. Comparison of AQI and PM2.5 over time**
+
+![Chart-06](https://github.com/user-attachments/assets/407f7a45-c326-4efc-ba36-6204dff7eb54)
+
+**Insights**
+
+The average Air Quality Index (AQI) and PM2.5 levels are moderate, indicating acceptable air quality.
+
+**Actionable Insights:**
+
+1.	Continue monitoring: Maintain regular monitoring of air quality to detect any changes in trends or patterns.
+	
+2.	Public awareness: Keep the public informed about air quality conditions and provide recommendations for health protection during periods of poor air quality.
+	
+3.	Long-term planning: Develop and implement long-term strategies to improve air quality, including reducing emissions from transportation, industry, and other sources.
+
+**9. Top 5 cities with the highest PM2.5 levels**
+
+![Chart-07](https://github.com/user-attachments/assets/b5c90c3d-ee04-432b-bff6-a9a5eb44f9f7)
+
+**Insights**
+
+PM2.5 levels are significantly higher in certain cities, with Gwanak-Gu, Hyeoksin-Dong, and Bangsan-Myeon having the highest contributions.
+
+**Actionable Insights:**
+
+1.	Focus on hotspot cities: Implement targeted measures in these cities to reduce PM2.5 emissions.
+	
+2.	Identify pollution sources: Conduct detailed studies to identify the specific sources of PM2.5 in these cities, such as traffic, industrial activities, and residential heating.
+	
+3.	Implement control measures: Implement appropriate control measures, such as emission standards, traffic management, and cleaner fuel use.
+
+**10. Heat map of pollutant concentration across districts**
+
+![Chart-09](https://github.com/user-attachments/assets/e80635fa-8aed-42c5-a892-720499ea169e)
+
+**Insights**
+
+PM2.5 levels vary significantly across different districts in South Korea, with Seoul, Gyeonggi-do, and Jeonbuk having the highest concentrations.
+
+**Actionable Insights:**
+
+1.	Targeted monitoring: Implement focused monitoring in high PM2.5 areas to identify specific sources and pollution hotspots.
+	
+2.	Source reduction: Investigate emission sources in these districts, such as traffic, industrial activities, and residential heating, and implement measures to reduce them.
+	
+3.	Public awareness: Inform residents in these districts about the health risks associated with high PM2.5 levels and advise them to take precautions.
+
+**11. Ozone levels above threshold**
+
+![Chart-10](https://github.com/user-attachments/assets/9c75b662-a83f-44ae-a83f-e5ac5b9e607c)
+
+**Insights**
+
+Ozone levels exceeding the threshold are significantly higher in Geumchon-Dong, followed by Gwanak-Gu.
+
+**Actionable Insights:**
+
+1.	Targeted monitoring: Implement focused monitoring in these areas to identify specific sources of ozone precursors.
+	
+2.	Source reduction: Investigate emission sources, such as vehicle traffic and industrial activities, and implement measures to reduce nitrogen oxides and volatile organic compounds.
+	
+3.	Public awareness: Inform residents in these areas about the health risks associated with elevated ozone levels and advise them to take precautions.
 
