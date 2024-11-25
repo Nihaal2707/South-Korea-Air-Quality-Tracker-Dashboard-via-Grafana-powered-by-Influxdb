@@ -1,45 +1,32 @@
-# South-Korea-Air-Quality-Tracker-Dashboard-via-Grafana-powered-by-Influxdb
+# South Korea Air Pollution and Weather Data Dashboard
 
-## Overview
+## Project Overview
 
-Air pollution is a critical environmental issue in South Korea, affecting the health of its citizens. This project provides a data visualization solution for monitoring and analyzing air pollution and weather-related factors. Using Grafana with InfluxDB as the backend, a real-time dashboard has been built to help users visualize pollution data alongside weather conditions.
+This repository hosts a comprehensive air pollution and weather monitoring dashboard built using Grafana and InfluxDB on a Virtual Machine running Ubuntu Kibana. The dashboard visualizes pollution and auxiliary weather data to provide insights into air quality trends and factors affecting pollution levels in South Korea.
 
-## Dataset Description
- 
-### Pollution Data 
-Date: Date of measurement.
-PM2.5: Fine particulate matter (PM2.5) in µg/m³.
-PM10: Fine particulate matter (PM10) in µg/m³.
-O3: Ozone (O₃) in µg/m³.
-NO2: Nitrogen Dioxide (NO₂) in ppm.
-SO2: Sulfur Dioxide (SO₂) in ppm.
-CO: Carbon Monoxide (CO) in ppm.
-Latitude (Lat): Measurement latitude.
-Longitude (Long): Measurement longitude.
-City: Measurement city.
-District: Measurement district.
-Country: Measurement country.
+## Objectives
 
-### Weather Data
+**1. Data Integration and Visualization**
 
-Station Details: Station number, name, latitude, longitude, and elevation.
+•	Combine pollution data with weather parameters to uncover patterns and relationships.
 
-Observation Date: Date of weather observation.
+•	Represent geographic distribution of pollution levels using latitude and longitude.
 
-Weather Parameters: Liquid precipitation, snow depth, dew, extreme air temperature, atmospheric pressure, sea level pressure, temperature, visibility, and wind.
+•	Track temporal trends of key pollutants (e.g., PM2.5, PM10, NO2) to identify seasonal and daily variations.
 
-### Dashboard Features
+•	Forecast pollution levels for public safety and planning purposes.
 
-Real-time visualization of pollution metrics such as PM2.5, PM10, and gas concentrations.
+**2.	Public Health and Policy Insights**
 
-Integration of weather data to identify correlations with pollution.
+•	Provide actionable insights to South Koreans, enabling informed decisions about outdoor activities based on pollution forecasts.
 
-Geographic mapping of pollution hotspots using latitude and longitude.
+•	Support policymakers with data to identify high-pollution areas and times, aiding in targeted interventions.
 
-Temporal trends of air pollution and weather patterns.
+**3.	Technical Integration**
 
-### Links
+•	Demonstrate the use of open-source tools (Grafana, InfluxDB, and Ubuntu Kibana) for real-time data streaming and dashboarding.
 
-[Dataset Source](https://www.kaggle.com/datasets/calebreigada/south-korean-pollution)
+•	Showcase a scalable pipeline for integrating and visualizing environmental data.
 
-[Grafana Dashboard](http://localhost:3000/d/dca8a887-e6a2-4af8-bb98-a34198fda911/south-korea-air-quality-tracker?orgId=1&from=1732431390722&to=1732483978626)
+
+
