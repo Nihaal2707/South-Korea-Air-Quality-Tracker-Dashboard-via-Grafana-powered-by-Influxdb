@@ -82,7 +82,6 @@ For viewing dashboard in Grafana [visit here](http://localhost:3000/d/dca8a887-e
 ![Dashboard-02](https://github.com/user-attachments/assets/657c516c-79a3-4c9d-b8f6-1b3257484a94)
 
 
-
 ## Managerial Insights
 
 **Chart 1:** **Pollutant Contribution by City**
