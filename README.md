@@ -56,6 +56,7 @@ This dataset provides real-time measurements of various air pollutants:
 ## Data Sources
 
 •	[Air Pollution Data Source](https://www.airkorea.or.kr/web/)
+
 •[	Data Set Source](https://www.kaggle.com/datasets/calebreigada/south-korean-pollution)
 
 ## Grafana Dashboard Overview
@@ -70,11 +71,37 @@ The dashboard includes:
 	
 4.	Time-Series Analysis: Line and area charts tracking temporal trends in pollution.
 
+
+
 For viewing dashboard in Grafana [visit here](http://localhost:3000/d/dca8a887-e6a2-4af8-bb98-a34198fda911/south-korea-air-quality-tracker?orgId=1&from=1732431390722&to=1732483978626)
+
 
 ![Dashboard-01](https://github.com/user-attachments/assets/67499b74-cd57-4444-908e-2666433c44bc)
 
 
 ![Dashboard-02](https://github.com/user-attachments/assets/657c516c-79a3-4c9d-b8f6-1b3257484a94)
 
+
+
+## Managerial Insights
+
+**Chart 1:** **Pollutant Contribution by City**
+
+![Chart-08](https://github.com/user-attachments/assets/cbd04f37-5a3a-4b71-9814-65ed3f951f77)
+
+**Insights:**
+
+•	The chart indicates pollutant distribution (PM2.5, PM10, CO, NO2, SO2, and Ozone) across multiple cities.
+
+•	It suggests that certain pollutants, such as PM2.5 and PM10, are more prominent in specific locations like Bangsan_Myeon.
+
+•	This data can help identify cities with higher pollution levels and their dominant pollutant types.
+
+**Actionable Insights:**
+
+1.	Focus on targeted interventions in cities with high pollution levels, such as implementing stricter industrial emission controls or promoting cleaner transportation.
+	
+2.	Use this data to prioritize resources, such as air purifiers or public advisories, in regions with the most significant pollution contribution.
+	
+3.	Conduct further investigations to determine the sources of specific pollutants and develop city-specific mitigation strategies.
 
