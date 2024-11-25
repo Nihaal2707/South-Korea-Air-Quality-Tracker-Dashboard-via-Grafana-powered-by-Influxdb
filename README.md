@@ -267,3 +267,131 @@ Ozone levels exceeding the threshold are significantly higher in Geumchon-Dong, 
 	
 3.	Public awareness: Inform residents in these areas about the health risks associated with elevated ozone levels and advise them to take precautions.
 
+**12. NO2 Concentration by City**
+
+![Chart-11](https://github.com/user-attachments/assets/34fd6389-1e97-45d9-8240-7bf956f7b27e)
+
+**Insights**
+
+Gwanak-Gu has the highest concentration of NO2, followed by Geumchon-Dong and Cheongnim-Dong.
+
+**Actionable Insights:**
+
+1.	Targeted monitoring: Implement focused monitoring in these areas to identify specific sources of NO2.
+	
+2.	Source reduction: Investigate emission sources, such as traffic and industrial activities, and implement measures to reduce NO2 emissions.
+	
+3.	Public awareness: Inform residents in these areas about the health risks associated with elevated NO2 levels and advise them to take precautions.
+
+**13. Total Pollution Contribution by Month**
+
+![Chart-12](https://github.com/user-attachments/assets/d13c3c6f-fc55-4712-b35b-2b3febbccbfa)
+
+**Insights**
+
+•	PM2.5 is the primary contributor to total pollution, followed by PM10 and Ozone.
+
+•	Other pollutants like CO, SO2, and NO2 have significantly lower contributions.
+
+**Actionable Insights:**
+
+1.	Focus on PM2.5 and PM10: Implement measures to reduce emissions from sources like vehicles, industries, and construction sites.
+	
+2.	Monitor Ozone Precursors: Keep a close watch on nitrogen oxides and volatile organic compound levels, especially during periods of high temperatures and sunlight.
+	
+3.	Data-Driven Decision Making: Utilize the air quality monitoring data to identify trends, hotspots, and pollution sources. This information can be used to target interventions and evaluate the effectiveness of mitigation measures.
+
+**14. Co levels by districts**
+
+![Chart-13](https://github.com/user-attachments/assets/54c031e2-155c-4180-9314-f92b2dba28fb)
+
+**Insights**
+
+CO levels vary across different districts in South Korea, with Gyeongbuk and Paju-Si having the highest concentrations.
+
+**Actionable Insights:**
+
+1.	Targeted monitoring: Implement focused monitoring in these areas to identify specific sources of CO.
+	
+2.	Source reduction: Investigate emission sources, such as traffic and industrial activities, and implement measures to reduce CO emissions.
+	
+3.	Public awareness: Inform residents in these areas about the health risks associated with elevated CO levels and advise them to take precautions.
+
+**15. City-Wise average of all Pollutants**
+
+![Chart-14](https://github.com/user-attachments/assets/90bbafd7-8971-46c6-b1fd-34363a83cee6)
+
+**Insights**
+
+•	PM2.5 levels are significantly higher in Cheongnim-Dong compared to Bangsan-Myeon.
+
+•	Ozone levels are also higher in Cheongnim-Dong.
+
+**Actionable Insights:**
+
+1.	Targeted monitoring: Implement focused monitoring in Cheongnim-Dong to identify specific sources of PM2.5 and ozone precursors.
+	
+2.	Source reduction: Investigate emission sources, such as traffic, industrial activities, and residential heating, and implement measures to reduce emissions.
+	
+3.	Public awareness: Inform residents in Cheongnim-Dong about the health risks associated with elevated pollutant levels and advise them to take precautions.
+
+
+## How to Upload Data into InfluxDB and Set Up Grafana
+
+**Step 1: Preparing the Data**
+
+1. Ensure the dataset is in CSV format and structured with appropriate headers.
+
+2. Use Python or a similar tool to transform the data into a format suitable for InfluxDB (e.g., timestamp-indexed).
+
+**Step 2: Uploading Data to InfluxDB**
+
+**1. Install InfluxDB:**
+
+sudo apt-get update
+
+sudo apt-get install influxdb
+
+sudo service influxdb start
+
+**2. Create a Database: Open the InfluxDB CLI and create a new database:**
+
+influx
+
+CREATE DATABASE pollution_data
+
+**3. Upload the Data: Use a tool like influx or Telegraf to import data. For example:**
+
+influx -import -path=path_to_your_csv_file -database=pollution_data
+
+**Step 3: Setting Up Grafana**
+
+**1. Install Grafana:**
+
+sudo apt-get install -y software-properties-common
+
+sudo apt-add-repository "deb https://packages.grafana.com/oss/deb stable main"
+
+sudo apt-get update
+
+sudo apt-get install grafana
+
+sudo systemctl start grafana-server
+
+sudo systemctl enable grafana-server
+
+**2. Configure Data Source:**
+
+a. Open Grafana on your browser (default: http://localhost:3000).
+
+b. Log in (default credentials: admin/admin) and add InfluxDB as a data source.
+
+c. Use the database name pollution_data and appropriate authentication.
+
+**3. Build the Dashboard:**
+
+a. Create panels for visualizing pollutants (e.g., time-series graphs for PM2.5 and PM10).
+
+b. Use the geospatial map plugin for location-based analysis.
+
+c. Incorporate auxiliary weather data to explore correlations.
