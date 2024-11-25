@@ -1,4 +1,4 @@
-# South Korea Air Pollution and Weather Data Dashboard
+# South Korea Air Quality Analytics Dashboard
 
 ## Project Overview
 
