@@ -105,3 +105,62 @@ For viewing dashboard in Grafana [visit here](http://localhost:3000/d/dca8a887-e
 	
 3.	Conduct further investigations to determine the sources of specific pollutants and develop city-specific mitigation strategies.
 
+**Chart 2: Maximum and Minimum PM2.5 Levels in the Past Month**
+
+![Chart-01](https://github.com/user-attachments/assets/390e613d-4d72-4069-b394-383ad33a178c)
+
+**Insights:**
+
+•	The chart reveals a maximum PM2.5 level of 206 µg/m³, which is alarmingly high and poses severe health risks.
+
+•	A minimum value of 0 µg/m³ indicates that there are areas or periods with clean air, which can be further explored for best practices.
+
+**Actionable Insights:**
+
+1.	The high PM2.5 level necessitates immediate action in the form of public health advisories, especially for sensitive groups like the elderly and children.
+	
+2.	Investigate best practices in areas with low pollution levels and replicate them in other regions.
+	
+3.	Utilize this data to forecast peak pollution periods and issue timely warnings or recommend preventive measures.
+
+**Chart 3: Air Quality Levels Over Time by City**
+
+![Chart-03](https://github.com/user-attachments/assets/0d373775-8792-4b61-a739-730759b6b24c)
+
+**Insights:**
+
+•	Cities like Gwanak_Gu (67.7 µg/m³) and Cheongnim_Dong (65.9 µg/m³) show relatively higher average PM2.5 levels compared to Bangsan_Myeon (20.5 µg/m³).
+
+•	Regional disparities in pollution levels indicate potential differences in industrial activity, traffic density, or weather conditions.
+
+**Actionable Insights:**
+
+1.	Focus on high-risk cities for implementing pollution control measures, such as regulating emissions and promoting public transportation.
+	
+2.	Use the data to analyze temporal patterns and evaluate whether pollution levels are due to seasonal effects or human activities.
+	
+3.	Engage local governments to develop tailored action plans addressing the primary sources of pollution in the most affected cities.
+
+**Chart 4: Daily average of all pollutants**
+
+![Chart-02](https://github.com/user-attachments/assets/e03e18fa-105c-4cc0-845d-28bbc81a314c)
+
+**Insights**
+
+•	High levels of PM2.5 and PM10 are the primary concern.
+
+•	Ozone levels are currently within acceptable limits but have the potential to rise.
+
+•	Levels of NO2, SO2, and CO are relatively low.
+
+
+**Actionable Insights:**
+
+•	Prioritize reducing PM2.5 and PM10 emissions from vehicles, industries, and construction sites.
+
+•	Monitor ozone precursors and take action to reduce them during favorable conditions.
+
+•	Raise public awareness about air quality and issue health advisories when necessary.
+
+
+
